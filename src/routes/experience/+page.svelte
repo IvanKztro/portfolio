@@ -39,7 +39,8 @@
           <h2 class="text-sm md:text-lg text-white font-semibold">Stack:</h2>
           <p class="text-xs md:text-sm">
             GITHUB, TAILWINDCSS, SVELTE, ANGULAR, FIREBASE, STRIPE, TILOPAY,
-            SHOPIFY, PDFJS, PAGEJS, CHARTJS, CLOUD FUNCTIONS, CONSUMO DE APIS
+            SHOPIFY, PDFJS, PAGEJS, CHARTJS, CLOUD FUNCTIONS, CONSUMO DE APIS,
+            RXJS
           </p>
         </div>
       </div>
