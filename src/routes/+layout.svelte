@@ -1,35 +1,30 @@
-<script>
-  // import Header from './Header.svelte';
+<script lang="ts">
   import "../app.css";
   import "./styles.css";
   import { fly } from "svelte/transition";
   import Navbar from "$lib/components/navbar.svelte";
   export let data;
+  let btnsidebar: any;
 
-  // import './styles.css';
+  function handleSidebar() {
+    btnsidebar.click();
+  }
 </script>
 
 <div class="app bg-base-200" data-theme="light">
-  <!-- {#key data.url}
-  <div
-    in:fly={{ x: -200, duration: 300, delay: 300 }}
-    out:fly={{ x: 200, duration: 300 }}
-  >
-    <slot />
-  </div>
-{/key} -->
   <div class="lg:hidden w-full">
     <Navbar></Navbar>
   </div>
   <div class="drawer lg:drawer-open mt-[4rem] lg:mt-0">
-    <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+    <input
+      id="my-drawer-2"
+      type="checkbox"
+      class="drawer-toggle"
+      bind:this={btnsidebar}
+    />
     <div
       class="drawer-content flex flex-col items-center justify-center bg-base-100"
     >
-      <!-- Page content here -->
-      <!-- <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden"
-        >Open drawer</label
-      > -->
       <section class="container mx-auto h-screen bg-base-100">
         {#key data.url}
           <main
@@ -53,6 +48,7 @@
         <li>
           <a
             href="/"
+            on:click={() => handleSidebar()}
             class="text-xl font-semibold {data.url === '/'
               ? 'bg-gray-700 text-green-400 '
               : ''}">Ivan Castro</a
@@ -62,6 +58,7 @@
         <li>
           <a
             href="/aboutme"
+            on:click={() => handleSidebar()}
             class="text-xl font-semibold {data.url === '/aboutme'
               ? 'bg-gray-700 text-green-400 '
               : ''} ">Acerca de mi</a
@@ -70,6 +67,7 @@
         <li>
           <a
             href="/skills"
+            on:click={() => handleSidebar()}
             class="text-xl font-semibold {data.url === '/skills'
               ? 'bg-gray-700 text-green-400 '
               : ''} ">Habilidades</a
@@ -78,6 +76,7 @@
         <li>
           <a
             href="/experience"
+            on:click={() => handleSidebar()}
             class="text-xl font-semibold {data.url === '/experience'
               ? 'bg-gray-700 text-green-400 '
               : ''} ">Experiencia</a
@@ -86,6 +85,7 @@
         <li>
           <a
             href="/work"
+            on:click={() => handleSidebar()}
             class="text-xl font-semibold {data.url === '/work'
               ? 'bg-gray-700 text-green-400 '
               : ''} ">Proyectos personales</a
