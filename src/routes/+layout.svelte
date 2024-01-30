@@ -18,7 +18,10 @@
     <slot />
   </div>
 {/key} -->
-  <div class="drawer lg:drawer-open">
+  <div class="lg:hidden w-full">
+    <Navbar></Navbar>
+  </div>
+  <div class="drawer lg:drawer-open mt-[4rem] lg:mt-0">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div
       class="drawer-content flex flex-col items-center justify-center bg-base-100"
@@ -27,8 +30,7 @@
       <!-- <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden"
         >Open drawer</label
       > -->
-      <Navbar></Navbar>
-      <section class="container mx-auto h-screen w-screen bg-base-100">
+      <section class="container mx-auto h-screen bg-base-100">
         {#key data.url}
           <main
             in:fly={{ x: -200, duration: 300, delay: 300 }}
@@ -42,7 +44,7 @@
       </section>
     </div>
     <div
-      class="drawer-side border border-b-1 border-green-400 shadow-lg shadow-green-400"
+      class="drawer-side border border-b-1 border-green-400 shadow-lg shadow-green-400 mt-[4rem] lg:mt-0"
     >
       <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"
       ></label>

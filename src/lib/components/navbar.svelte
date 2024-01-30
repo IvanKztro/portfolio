@@ -1,5 +1,5 @@
 <div
-  class="navbar bg-base-100 border border-b-1 border-green-400 shadow-lg shadow-green-400 sticky top-0 z-10"
+  class="navbar bg-base-100 border border-b-1 border-green-400 shadow-lg shadow-green-400 fixed top-0 z-10 w-full"
 >
   <div class="flex-1">
     <a class="btn btn-ghost text-xl">Ivan Castro</a>

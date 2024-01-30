@@ -7,16 +7,16 @@
 </svelte:head>
 
 <section
-  class=" flex flex-col lg:flex-row items-center gap-10 h-screen px-5 lg:px-0"
+  class=" flex flex-col lg:flex-row items-center gap-7 h-screen px-5 lg:px-5"
 >
-  <div class="flex flex-col">
+  <div class="flex flex-col gap-0 lg:gap-12">
     <h1
-      class="font-semibold text-3xl md:text-[3rem] lg:text-[4rem] pt-8 lg:pt-0"
+      class="font-semibold text-3xl md:text-[3rem] lg:text-[3.5rem] pt-8 lg:pt-0 leading-[55px]"
     >
       Hola, Soy <span class="text-green-400">Ivan Castro</span>
     </h1>
     <h1
-      class="font-semibold text-3xl md:text-[3rem] lg:text-[4rem] pt-8 lg:pt-0 mb-4"
+      class="font-semibold text-3xl md:text-[3rem] lg:text-[3.5rem] pt-4 lg:pt-0 mb-4 leading-[55px]"
     >
       <span class="text-green-400">Frontend Developer</span>
     </h1>
@@ -30,7 +30,7 @@
     src="./images/introduce.jpg"
     alt=""
     srcset=""
-    class="shadow-xl shadow-green-400 rounded-lg"
+    class="shadow-xl shadow-green-400 rounded-lg w-[350px]"
   />
 </section>
 

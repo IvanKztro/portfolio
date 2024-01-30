@@ -72,7 +72,7 @@
   ];
 </script>
 
-<div id="Proyectos" class="container mx-auto h-[95vh] overflow-y-auto">
+<div id="Proyectos" class="container mx-auto h-[95vh] overflow-y-auto px-5">
   <!-- <div class="">
 		<h2 class="text-center my-8 text-white text-4xl" >
 			PROYECTOS PERSONALES
@@ -82,12 +82,12 @@
     class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 justify-center mt-8"
   >
     {#each arrayProjects as p}
-      <div
+      <a
         class=" rounded-lg shadow-lg my-2 border border-1 border-green-400 hover:shadow-lg hover:shadow-green-400 cursor-pointer"
         href={p.url}
       >
         <img
-          class="w-full rounded-t-lg h-[14rem]"
+          class="w-full rounded-t-lg h-[12rem]"
           src={p.image}
           alt="Sunset in the mountains"
         />
@@ -114,7 +114,7 @@
             >
           </div> -->
         </section>
-      </div>
+      </a>
     {/each}
   </div>
 
