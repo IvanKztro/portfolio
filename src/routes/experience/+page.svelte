@@ -22,25 +22,21 @@
         <div
           class="collapse-title text-sm md:text-xl font-semibold border border-green-400 rounded-lg text-green-400"
         >
-          Tank Studio Lab (Frontend Developer): Diciembre 2021 - Enero 2024
+          Dbbugger (Frontend Developer): Julio 2023 - Marzo 2024
         </div>
         <div class="collapse-content border border-green-400 rounded-lg">
           <br />
           <h2 class="text-sm md:text-lg text-white font-semibold">Resumen:</h2>
           <p class="text-xs md:text-sm">
-            Desarrollo y soporte de sistemas hechos a medida, con frameworks
-            como: Angular y Svelte, encargado del desarrollo frontend y algunas
-            tareas de backend, sistemas como gestores de eventos, venta de
-            tickets, membresias para contenido multimedia, gestor de gastos con
-            control de gastos por usuario y sucursales, creador de agendas
-            customizables, etc.
+            Creación de landing pages, desarrollo de ecoomerce para venta de
+            tickets (eventos de musica) y dashboard para administrador del
+            sistema de venta de tickets.
           </p>
           <br />
           <h2 class="text-sm md:text-lg text-white font-semibold">Stack:</h2>
           <p class="text-xs md:text-sm">
             GITHUB, TAILWINDCSS, SVELTE, ANGULAR, FIREBASE, STRIPE, TILOPAY,
-            SHOPIFY, PDFJS, PAGEJS, CHARTJS, CLOUD FUNCTIONS, CONSUMO DE APIS,
-            RXJS
+            SHOPIFY, CLOUD FUNCTIONS, CONSUMO DE APIS, RXJS
           </p>
         </div>
       </div>
@@ -50,7 +46,33 @@
         <div
           class="collapse-title text-sm md:text-xl font-semibold border border-green-400 rounded-lg text-green-400"
         >
-          Planeta Preescolar (Frontend Developer): Noviembre 2020 - Agosto 2021
+          Tank Studio Lab (Frontend Developer): Junio 2021 - Mayo 2023
+        </div>
+        <div class="collapse-content border border-green-400 rounded-lg">
+          <br />
+          <h2 class="text-sm md:text-lg text-white font-semibold">Resumen:</h2>
+          <p class="text-xs md:text-sm">
+            Desarrollo y soporte de sistemas hechos a medida, con frameworks
+            como: Angular y Svelte, encargado del desarrollo frontend y algunas
+            tareas de backend, sistemas como gestores de eventos, membresias
+            para contenido multimedia, gestor de gastos con control de gastos
+            por usuario y sucursales, creador de agendas customizables, etc.
+          </p>
+          <br />
+          <h2 class="text-sm md:text-lg text-white font-semibold">Stack:</h2>
+          <p class="text-xs md:text-sm">
+            GITHUB, TAILWINDCSS, SVELTE, ANGULAR, FIREBASE, PDFJS, PAGEJS,
+            CHARTJS, CLOUD FUNCTIONS, CONSUMO DE APIS, RXJS
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div
+          class="collapse-title text-sm md:text-xl font-semibold border border-green-400 rounded-lg text-green-400"
+        >
+          Planeta Preescolar (Frontend Developer): Agosto 2020 - Abril 2021
         </div>
         <div class="collapse-content border border-green-400 rounded-lg">
           <br />
