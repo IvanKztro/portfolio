@@ -13,7 +13,7 @@
       <p
         class="text-center text-green-400 font-semibold pt-10 text-lg md:text-2xl"
       >
-        Experiencia: 3 años y 7 meses
+        Experiencia: 4 Años
       </p>
     </article>
     <article class="w-[100%] lg:w-[70%] flex flex-col gap-3 py-4">
@@ -22,7 +22,7 @@
         <div
           class="collapse-title text-sm md:text-xl font-semibold border border-green-400 rounded-lg text-green-400"
         >
-          Dbbugger (Frontend Developer): Julio 2023 - Marzo 2024
+          Dbugger (Frontend Developer): Junio 2023 - Actualidad
         </div>
         <div class="collapse-content border border-green-400 rounded-lg">
           <br />
@@ -72,7 +72,7 @@
         <div
           class="collapse-title text-sm md:text-xl font-semibold border border-green-400 rounded-lg text-green-400"
         >
-          Planeta Preescolar (Frontend Developer): Agosto 2020 - Abril 2021
+          Planeta Preescolar (Frontend Developer): Noviembre 2020 - Agosto 2021
         </div>
         <div class="collapse-content border border-green-400 rounded-lg">
           <br />
