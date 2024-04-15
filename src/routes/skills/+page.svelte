@@ -84,7 +84,7 @@
 <div
   class="container mx-auto flex flex-col justify-center h-screen pt-[110rem] md:pt-[25rem] lg:pt-[20rem] overflow-y-auto"
 >
-  <h4 class=" text-3xl font-semibold text-green-400 text-center mb-8 pt-8">
+  <h4 class=" text-3xl font-semibold text-[#10BD8B] text-center mb-8 pt-8">
     Frontend
   </h4>
   <div
@@ -109,7 +109,7 @@
       </div>
     {/each}
   </div>
-  <h4 class="text-3xl font-semibold text-green-400 text-center mb-8 mt-7">
+  <h4 class="text-3xl font-semibold text-[#10BD8B] text-center mb-8 mt-7">
     Backend
   </h4>
   <div

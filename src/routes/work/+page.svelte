@@ -83,7 +83,7 @@
   >
     {#each arrayProjects as p}
       <a
-        class=" rounded-lg shadow-lg my-2 border border-1 border-green-400 hover:shadow-lg hover:shadow-green-400 cursor-pointer"
+        class=" rounded-lg shadow-lg my-2 border border-1 border-[#10BD8B] hover:shadow-lg hover:shadow-[#10BD8B] cursor-pointer"
         href={p.url}
       >
         <img
@@ -99,7 +99,7 @@
           <div class="px-6 pt-3 pb-4">
             {#each p.tools as t}
               <span
-                class="inline-block bg-neutral rounded-full px-3 py-1 text-sm font-semibold text-green-400 mr-2 mb-2"
+                class="inline-block bg-neutral rounded-full px-3 py-1 text-sm font-semibold text-[#10BD8B] mr-2 mb-2"
                 >{t}</span
               >
             {/each}
@@ -109,7 +109,7 @@
               href={p.url}
               target="_blank"
               rel="noopener noreferrer"
-              class="bg-transparent hover:bg-green-500 text-green-400 font-semibold hover:text-white py-2 px-4 border border-green-400 hover:border-transparent rounded"
+              class="bg-transparent hover:bg-green-500 text-[#10BD8B] font-semibold hover:text-white py-2 px-4 border border-[#10BD8B] hover:border-transparent rounded"
               >Ver</a
             >
           </div> -->

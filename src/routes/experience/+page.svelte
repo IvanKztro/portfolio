@@ -8,10 +8,10 @@
         src="./images/profile-github.png"
         alt=""
         srcset=""
-        class="shadow-xl shadow-green-400 rounded-lg md:w-[750px] h-[150px] md:h-[250px] block mx-auto"
+        class="shadow-xl shadow-[#10BD8B] rounded-lg md:w-[750px] h-[150px] md:h-[250px] block mx-auto"
       />
       <p
-        class="text-center text-green-400 font-semibold pt-10 text-lg md:text-2xl"
+        class="text-center text-[#10BD8B] font-semibold pt-10 text-lg md:text-2xl"
       >
         Experiencia: 4 Años
       </p>
@@ -20,11 +20,11 @@
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" checked="checked" />
         <div
-          class="collapse-title text-sm md:text-xl font-semibold border border-green-400 rounded-lg text-green-400"
+          class="collapse-title text-sm md:text-xl font-semibold border border-[#10BD8B] rounded-lg text-[#10BD8B]"
         >
           Dbugger (Frontend Developer): Junio 2023 - Actualidad
         </div>
-        <div class="collapse-content border border-green-400 rounded-lg">
+        <div class="collapse-content border border-[#10BD8B] rounded-lg">
           <br />
           <h2 class="text-sm md:text-lg text-white font-semibold">Resumen:</h2>
           <p class="text-xs md:text-sm">
@@ -44,11 +44,11 @@
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
         <div
-          class="collapse-title text-sm md:text-xl font-semibold border border-green-400 rounded-lg text-green-400"
+          class="collapse-title text-sm md:text-xl font-semibold border border-[#10BD8B] rounded-lg text-[#10BD8B]"
         >
           Tank Studio Lab (Frontend Developer): Junio 2021 - Mayo 2023
         </div>
-        <div class="collapse-content border border-green-400 rounded-lg">
+        <div class="collapse-content border border-[#10BD8B] rounded-lg">
           <br />
           <h2 class="text-sm md:text-lg text-white font-semibold">Resumen:</h2>
           <p class="text-xs md:text-sm">
@@ -70,11 +70,11 @@
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
         <div
-          class="collapse-title text-sm md:text-xl font-semibold border border-green-400 rounded-lg text-green-400"
+          class="collapse-title text-sm md:text-xl font-semibold border border-[#10BD8B] rounded-lg text-[#10BD8B]"
         >
           Planeta Preescolar (Frontend Developer): Noviembre 2020 - Agosto 2021
         </div>
-        <div class="collapse-content border border-green-400 rounded-lg">
+        <div class="collapse-content border border-[#10BD8B] rounded-lg">
           <br />
           <h2 class="text-sm md:text-lg text-white font-semibold">Resumen:</h2>
           <p class="text-xs md:text-sm">
@@ -95,11 +95,11 @@
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
         <div
-          class="collapse-title text-sm md:text-xl font-semibold border border-green-400 rounded-lg text-green-400"
+          class="collapse-title text-sm md:text-xl font-semibold border border-[#10BD8B] rounded-lg text-[#10BD8B]"
         >
           Volkswagen de México (Practicante): Enero 2019 - Agosto 2019
         </div>
-        <div class="collapse-content border border-green-400 rounded-lg">
+        <div class="collapse-content border border-[#10BD8B] rounded-lg">
           <br />
           <h2 class="text-sm md:text-lg text-white font-semibold">Resumen:</h2>
           <p class="text-xs md:text-sm">

@@ -39,7 +39,7 @@
       </section>
     </div>
     <div
-      class="drawer-side border border-b-1 border-green-400 shadow-lg shadow-green-400 mt-[4rem] lg:mt-0"
+      class="drawer-side border border-b-1 border-[#10BD8B] shadow-lg shadow-[#10BD8B] mt-[4rem] lg:mt-0"
     >
       <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"
       ></label>
@@ -50,7 +50,7 @@
             href="/"
             on:click={() => handleSidebar()}
             class="text-xl font-semibold {data.url === '/'
-              ? 'bg-gray-700 text-green-400 '
+              ? 'bg-gray-700 text-[#10BD8B] '
               : ''}">Ivan Castro</a
           >
         </li>
@@ -60,7 +60,7 @@
             href="/aboutme"
             on:click={() => handleSidebar()}
             class="text-xl font-semibold {data.url === '/aboutme'
-              ? 'bg-gray-700 text-green-400 '
+              ? 'bg-gray-700 text-[#10BD8B] '
               : ''} ">Acerca de mi</a
           >
         </li>
@@ -69,7 +69,7 @@
             href="/skills"
             on:click={() => handleSidebar()}
             class="text-xl font-semibold {data.url === '/skills'
-              ? 'bg-gray-700 text-green-400 '
+              ? 'bg-gray-700 text-[#10BD8B] '
               : ''} ">Habilidades</a
           >
         </li>
@@ -78,7 +78,7 @@
             href="/experience"
             on:click={() => handleSidebar()}
             class="text-xl font-semibold {data.url === '/experience'
-              ? 'bg-gray-700 text-green-400 '
+              ? 'bg-gray-700 text-[#10BD8B] '
               : ''} ">Experiencia</a
           >
         </li>
@@ -87,7 +87,7 @@
             href="/work"
             on:click={() => handleSidebar()}
             class="text-xl font-semibold {data.url === '/work'
-              ? 'bg-gray-700 text-green-400 '
+              ? 'bg-gray-700 text-[#10BD8B] '
               : ''} ">Proyectos personales</a
           >
         </li>
@@ -97,7 +97,7 @@
             <p class="text-md font-semibold mt-2">ivanc654@gmail.com</p>
             <p class="text-md font-semibold">+52(244)140-8001</p>
             <a
-              class="text-md font-semibold btn bg-green-400 btn-sm text-white hover:bg-green-200 hover:text-black"
+              class="text-md font-semibold btn bg-[#10BD8B] btn-sm text-white hover:bg-green-200 hover:text-black"
               href="https://www.linkedin.com/in/ivan-ricardo-castro-rubi-9a954518a/"
               target="_blank"
               rel="noopener noreferrer">Linkedin</a

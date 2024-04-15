@@ -1,5 +1,5 @@
 <div
-  class="navbar bg-base-100 border border-b-1 border-green-400 shadow-lg shadow-green-400 fixed top-0 z-10 w-full"
+  class="navbar bg-base-100 border border-b-1 border-[#10BD8B] shadow-lg shadow-[#10BD8B] fixed top-0 z-10 w-full"
 >
   <div class="flex-1">
     <a class="btn btn-ghost text-xl">Ivan Castro</a>
@@ -15,7 +15,7 @@
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-7 h-7 text-green-400"
+        class="w-7 h-7 text-[#10BD8B]"
       >
         <path
           stroke-linecap="round"
