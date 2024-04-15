@@ -12,7 +12,7 @@
 </script>
 
 <div class="app bg-base-200" data-theme="light">
-  <div class="lg:hidden w-full">
+  <div class="lg:hidden w-full h-full">
     <Navbar></Navbar>
   </div>
   <div class="drawer lg:drawer-open mt-[4rem] lg:mt-0">
@@ -95,7 +95,7 @@
           <h2 class="text-2xl font-semibold">Contacto:</h2>
           <div class="flex flex-col gap-3">
             <p class="text-md font-semibold mt-2">ivanc654@gmail.com</p>
-            <p class="text-md font-semibold">2441408001</p>
+            <p class="text-md font-semibold">+52(244)140-8001</p>
             <a
               class="text-md font-semibold btn bg-green-400 btn-sm text-white hover:bg-green-200 hover:text-black"
               href="https://www.linkedin.com/in/ivan-ricardo-castro-rubi-9a954518a/"

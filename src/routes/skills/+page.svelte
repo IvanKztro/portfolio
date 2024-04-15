@@ -32,11 +32,11 @@
       ago: "3 años",
       url: "tailwind.png",
     },
-    // {
-    // 	title: 'Vue',
-    // 	ago: 'Un año',
-    // 	url: 'vue.png'
-    // },
+    {
+      title: "Vue",
+      ago: "Un año",
+      url: "vue.png",
+    },
     // {
     // 	title: 'ReactUn año',
     // 	url: 'react.png'
@@ -82,7 +82,7 @@
 </script>
 
 <div
-  class="container mx-auto flex flex-col justify-center h-screen pt-[102rem] md:pt-[25rem] lg:pt-[10rem] overflow-y-auto"
+  class="container mx-auto flex flex-col justify-center h-screen pt-[110rem] md:pt-[25rem] lg:pt-[20rem] overflow-y-auto"
 >
   <h4 class=" text-3xl font-semibold text-green-400 text-center mb-8 pt-8">
     Frontend
