@@ -13,7 +13,7 @@
       <p
         class="text-center text-[#10BD8B] font-semibold pt-10 text-lg md:text-2xl"
       >
-        Experiencia: 4 Años
+        Experiencia: 5 Años
       </p>
     </article>
     <article class="w-[100%] lg:w-[70%] flex flex-col gap-3 py-4">
@@ -46,7 +46,7 @@
         <div
           class="collapse-title text-sm md:text-xl font-semibold border border-[#10BD8B] rounded-lg text-[#10BD8B]"
         >
-          Tank Studio Lab (Frontend Developer): Junio 2021 - Mayo 2023
+          Tank Studio Lab (Frontend Developer): Marzo 2021 - Mayo 2023
         </div>
         <div class="collapse-content border border-[#10BD8B] rounded-lg">
           <br />
@@ -72,7 +72,7 @@
         <div
           class="collapse-title text-sm md:text-xl font-semibold border border-[#10BD8B] rounded-lg text-[#10BD8B]"
         >
-          Planeta Preescolar (Frontend Developer): Noviembre 2020 - Agosto 2021
+          Planeta Preescolar (Frontend Developer): Enero 2020 - Enero 2021
         </div>
         <div class="collapse-content border border-[#10BD8B] rounded-lg">
           <br />

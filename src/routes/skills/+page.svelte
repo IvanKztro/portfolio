@@ -4,22 +4,22 @@
   const arrayfrontend = [
     {
       title: "HTML ",
-      ago: "3 años",
+      ago: "5 años",
       url: "html.png",
     },
     {
       title: "CSS",
-      ago: "3 años",
+      ago: "5 años",
       url: "css.png",
     },
     {
       title: "JavaScript ",
-      ago: "3 años",
+      ago: "5 años",
       url: "javascript.png",
     },
     {
       title: "TypeScript",
-      ago: "2 años",
+      ago: "4 años",
       url: "typescript.png",
     },
     {
@@ -29,7 +29,7 @@
     },
     {
       title: "Tailwind",
-      ago: "3 años",
+      ago: "4 años",
       url: "tailwind.png",
     },
     {
@@ -43,12 +43,12 @@
     // },
     {
       title: "Svelte",
-      ago: "Un año",
+      ago: "2 años",
       url: "svelte.png",
     },
     {
       title: "Angular",
-      ago: "2 años",
+      ago: "3 años",
       url: "angular.png",
     },
   ];
@@ -61,7 +61,7 @@
     },
     {
       title: "Node ",
-      ago: "2 años ",
+      ago: "3 años ",
       url: "node.png",
     },
     // {
@@ -75,7 +75,7 @@
     },
     {
       title: "Firebase",
-      ago: "3 años",
+      ago: "4 años",
       url: "firebase.png",
     },
   ];
