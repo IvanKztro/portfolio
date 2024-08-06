@@ -46,7 +46,7 @@
         <div
           class="collapse-title text-sm md:text-xl font-semibold border border-[#10BD8B] rounded-lg text-[#10BD8B]"
         >
-          Tank Studio Lab (Frontend Developer): Marzo 2021 - Mayo 2023
+          Tank Studio Lab (Frontend Developer): Diciembre 2021 - Mayo 2023
         </div>
         <div class="collapse-content border border-[#10BD8B] rounded-lg">
           <br />
@@ -72,7 +72,7 @@
         <div
           class="collapse-title text-sm md:text-xl font-semibold border border-[#10BD8B] rounded-lg text-[#10BD8B]"
         >
-          Planeta Preescolar (Frontend Developer): Enero 2020 - Enero 2021
+          Planeta Preescolar (Frontend Developer): Abril 2020 - Noviembre 2021
         </div>
         <div class="collapse-content border border-[#10BD8B] rounded-lg">
           <br />
