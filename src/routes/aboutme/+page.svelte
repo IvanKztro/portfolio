@@ -3,7 +3,7 @@
 >
   <div class="flex flex-col">
     <p class="text-lg md:text-2xl lg:text-4xl mt-8">
-      Soy <span class="text-[#10BD8B]">Frontend Developer</span>, con 4 años de
+      Soy <span class="text-[#10BD8B]">Frontend Developer</span>, con 5 años de
       experiencia, apasionado por la creación de experiencias digitales
       impactantes. Mi experiencia en Frameworks como
       <span class="text-[#10BD8B]">Angular</span> y
