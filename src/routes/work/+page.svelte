@@ -1,13 +1,13 @@
 <script lang="ts">
   const arrayProjects = [
-    // {
-    // 	title: 'PetsCitas Veterinarias',
-    // 	image: './images/react-citas.PNG',
-    // 	url: 'https://react-vite-citas-pets.netlify.app',
-    // 	tools: ['React', 'tailwindcss', 'localStorage', 'vite']
-    // 	//React, Bootstrap, Next.js, Firebase
-    // 	// tools: ['HTML', 'JS', 'CSS', 'Bootstrap']
-    // },
+    {
+      title: "Ofrendas (proyecto para turismo)",
+      image: "./images/ofrendas.png",
+      url: "https://ofrendas-huaq.vercel.app/",
+      tools: ["Svelte", "OpenStreetMap", "Tailwind"],
+      //React, Bootstrap, Next.js, Firebase
+      // tools: ['HTML', 'JS', 'CSS', 'Bootstrap']
+    },
     {
       title: "Diseño de inicio de sesión",
       image: "./images/vue_ncP.jpg",
@@ -69,6 +69,7 @@
       //React, Bootstrap, Next.js, Firebase
       // tools: ['HTML', 'JS', 'CSS', 'Bootstrap']
     },
+    
   ];
 </script>
 
