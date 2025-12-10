@@ -1,55 +1,67 @@
 <script>
   import { onMount } from "svelte";
+  import { fade, scale } from 'svelte/transition';
+
+  let mounted = false;
+
+  onMount(() => {
+    mounted = true;
+  });
 
   const arrayfrontend = [
     {
-      title: "HTML ",
+      title: "HTML",
       ago: "5 años",
       url: "html.png",
+      level: 95
     },
     {
       title: "CSS",
       ago: "5 años",
       url: "css.png",
+      level: 95
     },
     {
-      title: "JavaScript ",
+      title: "JavaScript",
       ago: "5 años",
       url: "javascript.png",
+      level: 90
     },
     {
       title: "TypeScript",
       ago: "4 años",
       url: "typescript.png",
+      level: 85
     },
     {
       title: "Bootstrap",
       ago: "Un año",
       url: "bootstrap.png",
+      level: 80
     },
     {
       title: "Tailwind",
       ago: "4 años",
       url: "tailwind.png",
+      level: 90
     },
     {
       title: "Vue",
       ago: "Un año",
       url: "vue.png",
+      level: 75
     },
-    // {
-    // 	title: 'ReactUn año',
-    // 	url: 'react.png'
-    // },
     {
       title: "Svelte",
       ago: "2 años",
       url: "svelte.png",
+      level: 85
     },
     {
       title: "Angular",
       ago: "3 años",
       url: "angular.png",
+      level: 90
     },
   ];
 
@@ -58,87 +70,135 @@
       title: "PHP",
       ago: "Un año",
       url: "php.png",
+      level: 70
     },
     {
-      title: "Node ",
-      ago: "3 años ",
+      title: "Node",
+      ago: "3 años",
       url: "node.png",
+      level: 85
     },
-    // {
-    // 	title: 'MongoDB',
-    // 	url: 'mongodb.png'
-    // },
     {
-      title: "MySQL ",
+      title: "MySQL",
       ago: "Un año",
       url: "mysql.png",
+      level: 75
     },
     {
       title: "Firebase",
       ago: "4 años",
       url: "firebase.png",
+      level: 90
     },
   ];
 </script>
 
-<div
-  class="container mx-auto flex flex-col justify-center h-screen pt-[110rem] md:pt-[25rem] lg:pt-[20rem] overflow-y-auto"
->
-  <h4 class=" text-3xl font-semibold text-[#10BD8B] text-center mb-8 pt-8">
-    Frontend
-  </h4>
-  <div
-    class="grid gap-5 text justify-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"
-  >
-    {#each arrayfrontend as fr}
-      <div class=" flex justify-center my-4 w-full">
-        <div
-          class=" px-4 py-2 rounded-lg hover:bg-gray-700 transition ease-in-out hover:-translate-y-3 text-white hover:text-green-500"
-        >
-          <!-- svelte-ignore a11y-missing-attribute -->
-          <img
-            style="height: 8rem"
-            src="./images/{fr.url}"
-            alt={fr.title}
-            class=""
-          />
-          <p class="text-center mt-4">{@html fr.title}</p>
-          <p class="text-center">{@html fr.ago}</p>
-        </div>
-        <div />
+<div class="h-[100dvh] px-5 lg:px-16 py-12 overflow-y-auto ">
+  <!-- Header -->
+  <div class="text-center space-y-4 mb-16">
+    {#if mounted}
+      <div in:fade={{ duration: 600 }}>
+        <h1 class="text-4xl lg:text-5xl font-bold mb-3">
+          <span class="text-white/90">Mis</span> <span class="text-gradient">Habilidades</span>
+        </h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+          Tecnologías y herramientas que domino para crear soluciones excepcionales
+        </p>
       </div>
-    {/each}
+    {/if}
   </div>
-  <h4 class="text-3xl font-semibold text-[#10BD8B] text-center mb-8 mt-7">
-    Backend
-  </h4>
-  <div
-    class="grid gap-2 text justify-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"
-  >
-    {#each arraybackend as ba}
-      <div class=" flex justify-center my-4 w-full">
-        <div
-          class="px-4 py-2 rounded-lg hover:bg-gray-700 transition ease-in-out hover:-translate-y-3 text-white hover:text-green-500"
-        >
-          <!-- svelte-ignore a11y-missing-attribute -->
-          <img
-            style="height: 8rem"
-            src="./images/{ba.url}"
-            alt={ba.title}
-            class=""
-          />
-          <p class="text-center mt-4">{@html ba.title}</p>
-          <p class="text-center">{@html ba.ago}</p>
-        </div>
-        <div />
-      </div>
-    {/each}
-  </div>
-  <!-- </div> -->
-</div>
 
-<style>
-  .tool {
-    color: white;
-  }
-</style>
+  <!-- Frontend Section -->
+  <div class="mb-20">
+    <h2 class="text-3xl font-bold text-primary-400 text-center mb-12">
+      Frontend Development
+    </h2>
+    <div class="grid gap-6 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
+      {#each arrayfrontend as skill, i}
+        {#if mounted}
+          <div
+            in:scale={{ duration: 400, delay: i * 80, start: 0.8 }}
+            class="group relative card-glass rounded-2xl p-6 hover-lift"
+          >
+            <!-- Glow effect on hover -->
+            <div class="absolute inset-0 rounded-2xl bg-gradient-primary opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500"></div>
+
+            <!-- Content -->
+            <div class="relative flex flex-col items-center space-y-4">
+              <div class="relative">
+                <div class="absolute inset-0 bg-primary-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <img
+                  src="./images/{skill.url}"
+                  alt={skill.title}
+                  class="h-24 w-24 object-contain transform group-hover:scale-110 transition-transform duration-300 relative"
+                />
+              </div>
+
+              <div class="text-center space-y-2 w-full">
+                <h3 class="text-lg font-semibold text-white group-hover:text-primary-400 transition-colors">
+                  {skill.title}
+                </h3>
+                <p class="text-sm text-gray-400">{skill.ago} de experiencia</p>
+
+                <!-- Progress bar -->
+                <div class="w-full bg-gray-800 rounded-full h-2 mt-3">
+                  <div
+                    class="bg-gradient-primary h-2 rounded-full transition-all duration-1000 ease-out"
+                    style="width: {mounted ? skill.level : 0}%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {/if}
+      {/each}
+    </div>
+  </div>
+
+  <!-- Backend Section -->
+  <div>
+    <h2 class="text-3xl font-bold text-accent-cyan text-center mb-12">
+      Backend Development
+    </h2>
+    <div class="grid gap-6 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
+      {#each arraybackend as skill, i}
+        {#if mounted}
+          <div
+            in:scale={{ duration: 400, delay: (arrayfrontend.length * 80) + (i * 80), start: 0.8 }}
+            class="group relative card-glass rounded-2xl p-6 hover-lift"
+          >
+            <!-- Glow effect on hover -->
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent-cyan/20 to-accent-blue/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"></div>
+
+            <!-- Content -->
+            <div class="relative flex flex-col items-center space-y-4">
+              <div class="relative">
+                <div class="absolute inset-0 bg-accent-cyan/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <img
+                  src="./images/{skill.url}"
+                  alt={skill.title}
+                  class="h-24 w-24 object-contain transform group-hover:scale-110 transition-transform duration-300 relative"
+                />
+              </div>
+
+              <div class="text-center space-y-2 w-full">
+                <h3 class="text-lg font-semibold text-white group-hover:text-accent-cyan transition-colors">
+                  {skill.title}
+                </h3>
+                <p class="text-sm text-gray-400">{skill.ago} de experiencia</p>
+
+                <!-- Progress bar -->
+                <div class="w-full bg-gray-800 rounded-full h-2 mt-3">
+                  <div
+                    class="bg-gradient-to-r from-accent-cyan to-accent-blue h-2 rounded-full transition-all duration-1000 ease-out"
+                    style="width: {mounted ? skill.level : 0}%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {/if}
+      {/each}
+    </div>
+  </div>
+</div>
