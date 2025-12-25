@@ -1,8 +1,36 @@
-<script>
-  import { fade, fly } from 'svelte/transition';
+<script lang="ts">
+  import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
 
   let mounted = false;
+  let visibleItems: number[] = [];
+
+  // Svelte action para detectar visibilidad con Intersection Observer
+  function inViewport(node: HTMLElement, index: number) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            visibleItems = [...visibleItems, index];
+          } else {
+            visibleItems = visibleItems.filter((i) => i !== index);
+          }
+        });
+      },
+      {
+        threshold: 0.2, // Se activa cuando el 20% del elemento es visible
+        rootMargin: '-50px 0px'
+      }
+    );
+
+    observer.observe(node);
+
+    return {
+      destroy() {
+        observer.disconnect();
+      }
+    };
+  }
 
   onMount(() => {
     mounted = true;
@@ -27,7 +55,7 @@
     },
     {
       company: "Tank Lab",
-      role: "Desarrollador Frontend y Backend",
+      role: "Desarrollador Full Stack",
       period: "Diciembre 2021 - Mayo 2023",
       current: false,
       summary: "Desarrollo y soporte de sistemas a medida con foco en frontend: Gestor de eventos para San Francisco (admin + interfaz pública), sitio de contenido multimedia con membresías y control de acceso, sistema de gastos por sucursales con reportes y gráficas, generador de calendarios y agendas con lógica personalizada.",
@@ -57,12 +85,23 @@
   <div class="text-center space-y-6 mb-16">
     {#if mounted}
       <div in:fade={{ duration: 600 }}>
-        <img
-          src="./images/profile-github.png"
-          alt="GitHub Profile"
-          class="w-full max-w-3xl h-[200px] md:h-[280px] object-cover rounded-2xl shadow-card-hover mx-auto mb-8 border border-primary-500/30"
-        />
-        <h1 class="text-4xl lg:text-5xl font-bold mb-3">
+        <!-- Image container with blur background -->
+        <div class="relative w-full max-w-3xl h-[200px] md:h-[280px] rounded-2xl shadow-card-hover mx-auto mb-8 border border-primary-500/30 overflow-hidden">
+          <!-- Blurred background image -->
+          <img
+            src="./images/profile-github.png"
+            alt=""
+            aria-hidden="true"
+            class="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-60"
+          />
+          <!-- Main image -->
+          <img
+            src="./images/profile-github.png"
+            alt="GitHub Profile"
+            class="relative w-full h-full object-contain z-10"
+          />
+        </div>
+        <h1 class="text-4xl lg:text-5xl font-bold my-7">
           <span class="text-white/90">Mi</span> <span class="text-gradient">Experiencia</span>
         </h1>
         <div class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-card border border-primary-500/30 rounded-full">
@@ -83,8 +122,13 @@
       {#each experiences as exp, i}
         {#if mounted}
           <div
-            in:fly={{ y: 50, duration: 600, delay: i * 150 }}
-            class="relative mb-12 md:mb-20"
+            use:inViewport={i}
+            class="relative mb-12 md:mb-20 transition-all duration-700 ease-out
+              {visibleItems.includes(i) 
+                ? 'opacity-100 translate-y-0' 
+                : i % 2 === 0 
+                  ? 'opacity-0 translate-x-12' 
+                  : 'opacity-0 -translate-x-12'}"
           >
             <!-- Timeline dot -->
             <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 -translate-y-4 w-6 h-6 items-center justify-center">
